@@ -144,6 +144,14 @@ a {
     overflow: scroll;
     overflow-wrap: break-word;
     overflow-x: hidden;
+    transition: all 0.5s ease;
+    
+}
+
+.card:hover {
+    transition: all 0.5s ease;
+    background-color: #F88379;
+    cursor: pointer;
     
 }
 
@@ -164,3 +172,4 @@ only screen and (min-device-pixel-ratio: 1.5){
   }
 
 }
+
