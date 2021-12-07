@@ -81,10 +81,10 @@ input[type="checkbox"] {
     
 }
 
-.github {
-    margin: 40px auto;
+.github, .about {
+    margin: 50px;
     background-color: #CFCFC4;
-    padding: 15px;
+    padding: 5px;
     border-radius: 30px;
     box-shadow: 0 8px 16px 0 gray;
     font-size: 1.5vw;
@@ -97,12 +97,12 @@ input[type="checkbox"] {
     gap: 20px;
 }
 
-.github:hover {
+.github:hover, .about:hover {
     transition: all 0.5s ease;
     background-color: gray;
 }
 
-.github img{
+.github img, .about img{
     width: 3.5vw;
     height: auto;
     margin-top: 8px;
@@ -126,7 +126,7 @@ a {
 }
 
 @media screen and (max-width: 900px)  {
-    .git-text {
+    .git-text, .about-text {
       display: none;
     }
 }
