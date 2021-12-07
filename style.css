@@ -127,7 +127,7 @@ a {
 }
 
 @media screen and (max-width: 900px)  {
-    .git-text, .about-text {
+    .git-text, .about-text, .src-text {
       display: none;
     }
 }
