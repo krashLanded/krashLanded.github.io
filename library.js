@@ -1,8 +1,10 @@
-
+let shelf = document.querySelector('.shelf');
     const myLibrary =
     [];
 
    
+
+
 
     function getValues() {
         title = document.getElementById('title').value;
@@ -16,6 +18,18 @@
 
         myLibrary.push(currentBook);
 
+        for (i = myLibrary.length - 1; i < myLibrary.length; i++) {
+            let card = document.createElement('div');
+            card.classList.add('card');
+
+
+
+            shelf.appendChild(card);
+            
+
+            card.innerHTML = myLibrary[i].title.bold() + ' by ' + myLibrary[i].author.bold() + "<br />" + "<br />" + myLibrary[i].totalPages + "/"+ myLibrary[i].completedPages;
+            
+        }
     }
 
 
@@ -29,7 +43,3 @@ function Book(title, author, totalPages, completedPages, checkStatus) {
 }
 
 
-let exampleBook = new Book('Example Book', 'Eric Q.', '21', '5', false);
-myLibrary.push(exampleBook);
-
- 
